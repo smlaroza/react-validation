@@ -138,7 +138,7 @@ function Forms(props) {
         <input
           className={confirmpasswordError === "" ? "" : "error"}
           onChange={(e) => setConfirmPassword(e.target.value)}
-          type="text"
+          type="password"
           placeholder="Confirm Password"
         />
 
