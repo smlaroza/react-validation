@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "/Users/punchcode/Projects/react-validation/src/styles/base.css"
+import "../styles/base.css"
 import validator from "validator"
 // import { Link } from "react-router-dom"
 
@@ -16,9 +16,11 @@ function Forms(props) {
   const [confirmpasswordError, setConfirmPasswordError] = useState("")
   const [website, setWebsite] = useState("")
   const [websiteError, setWebsiteError] = useState("")
+  const [submitted, setSubmitted] = useState(false)
 
   function handleSubmit(e) {
     e.preventDefault()
+    props.history.push("/submitted")
     let err = false
 
     if (name === "") {

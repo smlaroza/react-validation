@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import "/Users/punchcode/Projects/react-validation/src/styles/base.css"
+import "../styles/base.css"
 import Forms from "./forms"
 import submitted from "./submitted"
 
